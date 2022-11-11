@@ -25,7 +25,7 @@ public class Prospector : MonoBehaviour {
 
 	[Header("Set Dynamically")]
 	public Deck deck;
-	public Layout layout;
+	public LayoutBD layout;
 	public List<CardProspector> drawPile;
 	public Transform layoutAnchor;
 	public CardProspector target;
@@ -80,10 +80,10 @@ public class Prospector : MonoBehaviour {
 		//	c = deck.cards[cNum];
 		//	c.transform.localPosition = new Vector3((cNum % 13) * 3, cNum / 13 * 4, 0);
 		//}
-
-		layout = GetComponent<Layout>();
-		layout.ReadLayout(layoutXML.text);
 		drawPile = ConverListCardsToListCardProspectors(deck.cards);
+		layout = GetComponent<LayoutBD>();
+		layout.ReadLayout(layoutXML.text);
+		
 		LayoutGame();
 	}
 
@@ -117,19 +117,22 @@ public class Prospector : MonoBehaviour {
 		}
 
 		CardProspector cp;
-
-		foreach (SlotDef tSD in layout.slotDefs)
+		for (int i = 0; i < 4; i++)
 		{
-			cp = Draw();
-			cp.faceUp = tSD.faceUp;
-			cp.transform.parent = layoutAnchor;
-			cp.transform.localPosition = new Vector3(
-				layout.multiplier.x * tSD.x, layout.multiplier.y * tSD.y, -tSD.layerID);
-			cp.layoutID = tSD.id;
-			cp.slotDef = tSD;
-			cp.state = eCardState.tableau;
-			cp.SetSortingLayerName(tSD.layerName);
-			tableau.Add(cp);
+
+			foreach (SlotDef tSD in layout.slotDefs)
+			{
+				cp = Draw();
+				cp.faceUp = tSD.faceUp;
+				cp.transform.parent = layoutAnchor;
+				cp.transform.localPosition = new Vector3(
+					layout.multiplier.x * tSD.x, layout.multiplier.y * tSD.y, -tSD.layerID);
+				cp.layoutID = tSD.id;
+				cp.slotDef = tSD;
+				cp.state = eCardState.tableau;
+				cp.SetSortingLayerName(tSD.layerName);
+				tableau.Add(cp);
+			}
 		}
 		foreach (CardProspector tCP in tableau)
         {

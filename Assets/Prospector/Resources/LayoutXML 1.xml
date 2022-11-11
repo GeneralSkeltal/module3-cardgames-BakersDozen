@@ -1,0 +1,92 @@
+<xml>
+	<!-- This file holds info for laying out the Prospector card game. -->
+	
+	<!-- The multiplier is multiplied by the x and y attributes below. -->
+	<!-- This determines how loose or tight the layout is. --> 
+	<multiplier x="1.25" y="1.5" />
+	
+	<!-- In the XML below, id is the number of the card -->
+	<!-- x and y set position -->
+	<!-- faceup is 1 if the card is face-up -->
+	<!-- layer sets the depth layer so cards overlap properly -->
+	<!-- hiddenby is the ids of cards that keep a card face-down -->
+	
+	<!-- Pile 1. -->
+	<slot id="0" x="8" y="6" faceup="0"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"   />
+	<slot id="0" x="8" y="6" faceup="1"   />
+	<slot id="0" x="8" y="6" faceup="1"   />
+	<slot id="0" x="8" y="6" faceup="1"   />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+	<slot id="0" x="8" y="6" faceup="1"  />
+
+	<!-- Pile 2. -->
+	<slot id="1" x="8" y="3" faceup="0"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"   />
+	<slot id="1" x="8" y="3" faceup="1"   />
+	<slot id="1" x="8" y="3" faceup="1"   />
+	<slot id="1" x="8" y="3" faceup="1"   />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+	<slot id="1" x="8" y="3" faceup="1"  />
+
+	<!-- Pile 3. -->
+	<slot id="2" x="8" y="0" faceup="0"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"   />
+	<slot id="2" x="8" y="0" faceup="1"   />
+	<slot id="2" x="8" y="0" faceup="1"   />
+	<slot id="2" x="8" y="0" faceup="1"   />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	<slot id="2" x="8" y="0" faceup="1"  />
+	
+	<!-- Pile 4. -->
+	<slot id="3" x="8" y="-1" faceup="0"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"   />
+	<slot id="3" x="8" y="-1" faceup="1"   />
+	<slot id="3" x="8" y="-1" faceup="1"   />
+	<slot id="3" x="8" y="-1" faceup="1"   />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+	<slot id="3" x="8" y="-1" faceup="1"  />
+
+	<!-- Pile 5. -->
+	<slot id="4" x="8" y="-2" faceup="0"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"   />
+	<slot id="4" x="8" y="-2" faceup="1"   />
+	<slot id="4" x="8" y="-2" faceup="1"   />
+	<slot id="4" x="8" y="-2" faceup="1"   />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	<slot id="4" x="8" y="-2" faceup="1"  />
+	
+
+	
+</xml>
+	
