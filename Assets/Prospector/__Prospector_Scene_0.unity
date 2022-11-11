@@ -463,8 +463,8 @@ GameObject:
   - component: {fileID: 827460509}
   - component: {fileID: 827460515}
   - component: {fileID: 827460514}
-  - component: {fileID: 827460516}
   - component: {fileID: 827460517}
+  - component: {fileID: 827460518}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckXML: {fileID: 4900000, guid: 3ce8853c30e825f4f843850c982ccf39, type: 3}
-  layoutXML: {fileID: 4900000, guid: f478386f7dc7d1f43a217861444c89e0, type: 3}
+  layoutXML: {fileID: 4900000, guid: a3c93ce498cc38e4ea29d814bcd0dedc, type: 3}
   xOffset: 3
   yOffset: -2.5
   layoutCenter: {x: 0, y: 0, z: 0}
@@ -640,7 +640,7 @@ MonoBehaviour:
   tableau: []
   discardPile: []
   fsRun: {fileID: 0}
---- !u!114 &827460516
+--- !u!114 &827460517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,7 +649,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 827460508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1670ce4e27eb8f408cc7c674a370287, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cbdce5c995cf1a4daaf7b5d6b6008eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chain: 0
+  scoreRun: 0
+  score: 0
+--- !u!114 &827460518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c5b94ef2317ca4b996381651d36daa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xmlr:
@@ -683,21 +698,6 @@ MonoBehaviour:
   - Row3
   - Discard
   - Draw
---- !u!114 &827460517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827460508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cbdce5c995cf1a4daaf7b5d6b6008eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chain: 0
-  scoreRun: 0
-  score: 0
 --- !u!1 &962240830
 GameObject:
   m_ObjectHideFlags: 0
