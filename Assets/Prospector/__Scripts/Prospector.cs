@@ -6,8 +6,8 @@ using System.Collections.Generic;
 
 
 public class Prospector : MonoBehaviour {
-
-	static public Prospector S;
+    private const eCardState discard = eCardState.discard;
+    static public Prospector S;
 
 	[Header("Set in Inspector")]
 	public TextAsset deckXML;
@@ -85,9 +85,9 @@ public class Prospector : MonoBehaviour {
 		//}
 		drawPile = ConverListCardsToListCardProspectors(deck.cards);
 		layout = GetComponent<LayoutBD>();
-		layout.ReadLayout(layoutXML.text);
-		
-		LayoutGame();
+        layout.ReadLayout(layoutXML.text);
+
+        LayoutGame();
 	}
 
 	List<CardProspector> ConverListCardsToListCardProspectors(List<Card> lCD)
@@ -181,7 +181,7 @@ public class Prospector : MonoBehaviour {
 
 	void MoveToDiscard(CardProspector cd)
     {
-		cd.state = eCardState.discard;
+        cd.state = discard;
 		discardPile.Add(cd);
 		cd.transform.parent = layoutAnchor;
 
