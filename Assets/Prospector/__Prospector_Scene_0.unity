@@ -465,6 +465,7 @@ GameObject:
   - component: {fileID: 827460514}
   - component: {fileID: 827460516}
   - component: {fileID: 827460517}
+  - component: {fileID: 827460518}
   m_Layer: 0
   m_Name: _MainCamera
   m_TagString: MainCamera
@@ -631,7 +632,7 @@ MonoBehaviour:
   gameOverText: {fileID: 0}
   roundResultText: {fileID: 0}
   highScoreText: {fileID: 0}
-  goldCardChance: 0.3
+  goldCardChance: 0
   deck: {fileID: 0}
   layout: {fileID: 0}
   drawPile: []
@@ -698,6 +699,18 @@ MonoBehaviour:
   chain: 0
   scoreRun: 0
   score: 0
+--- !u!114 &827460518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827460508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8c5b94ef2317ca4b996381651d36daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &962240830
 GameObject:
   m_ObjectHideFlags: 0
